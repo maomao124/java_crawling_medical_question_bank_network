@@ -1,5 +1,7 @@
 package mao.service;
 
+import mao.applicatiom.MainApplication;
+import mao.entity.QuestionTitle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -23,5 +25,21 @@ class QuestionServiceTest
     @Test
     void getQuestionTitle()
     {
+        QuestionTitle questionTitle = MainApplication.getQuestionService().getQuestionTitle("653", "31");
+        System.out.println(questionTitle);
+    }
+
+    @Test
+    void getQuestionTitle2()
+    {
+        QuestionTitle questionTitle = MainApplication.getQuestionService().getQuestionTitle("510", "22");
+        System.out.println(questionTitle);
+    }
+
+    @Test
+    void getQuestionTitle3()
+    {
+        QuestionTitle questionTitle = MainApplication.getQuestionService().getQuestionTitle("432", "18");
+        System.out.println(questionTitle);
     }
 }
