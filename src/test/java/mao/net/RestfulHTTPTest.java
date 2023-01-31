@@ -1,6 +1,8 @@
 package mao.net;
 
 import mao.entity.Question;
+import mao.entity.R;
+import mao.utils.SslUtils;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -35,14 +37,11 @@ class RestfulHTTPTest
     }
 
     @Test
-    void requestArray()
+    void requestArray() throws Exception
     {
-        List<Question> questionList = restfulHTTP.requestArray(Question.class, "https://www.medtiku.com/api/q?cid=653&sid=31", "GET", null, null);
-        for (Question question : questionList)
-        {
-            System.out.println(question);
-            System.out.println();
-        }
+        SslUtils.ignoreSsl();
+        R r = restfulHTTP.request(R.class, "https://www.medtiku.com/api/q?cid=653&sid=31", "GET", null, null);
+        System.out.println(r);
     }
 
     @Test

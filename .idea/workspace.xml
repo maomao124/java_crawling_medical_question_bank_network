@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="610271fe-91c9-432f-9887-0d77da445191" name="变更" comment="java_crawling_medical_question_bank_network">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mao/entity/QuestionInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mao/utils/SslUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mao/net/RestfulHTTPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mao/net/RestfulHTTPTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mao/handler/Base64Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mao/handler/Base64Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mao/net/RestfulHTTPTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mao/net/RestfulHTTPTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
       <recent name="mao.net" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RestfulHTTPTest.requestArray">
     <configuration name="Base64Test.decode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java爬取医学题库网" />
       <extension name="coverage">
@@ -79,8 +81,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RestfulHTTPTest.requestArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java爬取医学题库网" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mao.net.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mao.net" />
+      <option name="MAIN_CLASS_NAME" value="mao.net.RestfulHTTPTest" />
+      <option name="METHOD_NAME" value="requestArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RestfulHTTPTest.requestArray" />
         <item itemvalue="JUnit.Base64Test.decode" />
       </list>
     </recent_temporary>
@@ -96,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675163060124</updated>
-      <workItem from="1675163061966" duration="3323000" />
+      <workItem from="1675163061966" duration="4110000" />
     </task>
     <task id="LOCAL-00001" summary="java_crawling_medical_question_bank_network">
       <created>1675164897055</created>
@@ -112,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675165704649</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="java_crawling_medical_question_bank_network">
+      <created>1675166704176</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675166704176</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
