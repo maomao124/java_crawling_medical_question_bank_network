@@ -13,7 +13,9 @@ import mao.utils.FileUtils;
 import mao.utils.SslUtils;
 
 import java.awt.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -472,7 +474,7 @@ public class QuestionServiceImpl implements QuestionService
                 .append("[TOC]")
                 .append("\n\n")
                 .append("---")
-                .append("\n\n\n\n\n\n\n\n")
+                .append("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
                 .append("# ")
                 .append(questionInfo.getSubject())
                 .append("\n\n")
@@ -547,7 +549,168 @@ public class QuestionServiceImpl implements QuestionService
                 stringBuilder.append("\n\n\n\n\n\n");
                 i++;
             }
+
         }
+
+        if (type2questionList.size() > 0)
+        {
+            stringBuilder.append("\n\n\n\n");
+
+
+            stringBuilder.append("### 多选题")
+                    .append("\n\n");
+
+            for (Question question : type2questionList)
+            {
+                stringBuilder.append("#### ")
+                        .append(i)
+                        .append(".")
+                        .append(question.getTitle())
+                        .append("\n\n");
+
+                //选项a
+                if (question.getA() != null && !question.getA().equals(""))
+                {
+                    stringBuilder.append("* ")
+                            .append(question.getA())
+                            .append("\n\n");
+                }
+                //选项b
+                if (question.getB() != null && !question.getB().equals(""))
+                {
+                    stringBuilder.append("* ")
+                            .append(question.getB())
+                            .append("\n\n");
+                }
+                //选项c
+                if (question.getC() != null && !question.getC().equals(""))
+                {
+                    stringBuilder.append("* ")
+                            .append(question.getC())
+                            .append("\n\n");
+                }
+                //选项d
+                if (question.getD() != null && !question.getD().equals(""))
+                {
+                    stringBuilder.append("* ")
+                            .append(question.getD())
+                            .append("\n\n");
+                }
+                //选项e
+                if (question.getE() != null && !question.getE().equals(""))
+                {
+                    stringBuilder.append("* ").append(question.getE())
+                            .append("\n\n");
+                }
+
+                //正确答案
+                stringBuilder.append("**")
+                        .append("正确答案：")
+                        .append(question.getAnswer())
+                        .append("**")
+                        .append("\n\n");
+                //解析
+                if (question.getNote() != null && !question.getNote().equals(""))
+                {
+                    stringBuilder
+                            .append("> ")
+                            .append("解析：").append(question.getNote())
+                            .append("\n\n");
+                }
+                stringBuilder.append("\n\n\n\n\n\n");
+                i++;
+            }
+        }
+
+        if (type3questionList.size() > 0)
+        {
+            stringBuilder.append("\n\n\n\n");
+
+
+            stringBuilder.append("### 记忆题")
+                    .append("\n\n");
+
+            for (Question question : type3questionList)
+            {
+                stringBuilder.append("#### ")
+                        .append(i)
+                        .append(".")
+                        .append(question.getTitle())
+                        .append("\n\n");
+
+                //选项a
+                if (question.getA() != null && !question.getA().equals(""))
+                {
+                    stringBuilder.append("* ")
+                            .append(question.getA())
+                            .append("\n\n");
+                }
+                //选项b
+                if (question.getB() != null && !question.getB().equals(""))
+                {
+                    stringBuilder.append("* ")
+                            .append(question.getB())
+                            .append("\n\n");
+                }
+                //选项c
+                if (question.getC() != null && !question.getC().equals(""))
+                {
+                    stringBuilder.append("* ")
+                            .append(question.getC())
+                            .append("\n\n");
+                }
+                //选项d
+                if (question.getD() != null && !question.getD().equals(""))
+                {
+                    stringBuilder.append("* ")
+                            .append(question.getD())
+                            .append("\n\n");
+                }
+                //选项e
+                if (question.getE() != null && !question.getE().equals(""))
+                {
+                    stringBuilder.append("* ").append(question.getE())
+                            .append("\n\n");
+                }
+
+                //正确答案
+                /*stringBuilder.append("**")
+                        .append("正确答案：")
+                        .append(question.getAnswer())
+                        .append("**")
+                        .append("\n\n");*/
+                //解析
+                if (question.getNote() != null && !question.getNote().equals(""))
+                {
+                    stringBuilder
+                            .append("> ")
+                            .append("解析：").append(question.getNote())
+                            .append("\n\n");
+                }
+                stringBuilder.append("\n\n\n\n\n\n");
+                i++;
+            }
+        }
+
+
+        stringBuilder.append("\n\n\n\n\n\n\n\n\n\n")
+                .append("---")
+                .append("\n\n");
+
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String date = simpleDateFormat.format(new Date());
+        stringBuilder.append("构建日期：").append(date)
+                .append("\n\n").append("cid: ")
+                .append(questionInfo.getCid())
+                .append("\n\n").append("sid: ")
+                .append(questionInfo.getSid())
+                .append("\n\n")
+                .append("build  by  mao")
+                .append("\n\n").append("构建用户：")
+                .append(System.getProperty("user.name"))
+                .append("\n\n")
+                .append("---");
+
 
         String data = stringBuilder.toString();
 
