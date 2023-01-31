@@ -30,7 +30,7 @@ public class Run
         System.out.println("数据来源：https://www.medtiku.com/app");
         System.out.println();
         System.out.println("使用说明：\n" +
-                "添加参数-d可输出更详细的数据" +
+                "添加参数\"-d\"可在控制台输出更详细的数据，例如：\"java -jar xxx.jar -d\"\n" +
                 "本程序需要两个数据，分别是cid和sid，怎么拿到这两个数据，步骤如下:\n" +
                 "1.用浏览器进入该网址 https://www.medtiku.com/app\n" +
                 "2.点击到做题页面 https://www.medtiku.com/app#/q/25/560/1\n" +

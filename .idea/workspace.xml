@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="610271fe-91c9-432f-9887-0d77da445191" name="变更" comment="java_crawling_medical_question_bank_network">
-      <change afterPath="$PROJECT_DIR$/中医综合历年真题-2016年中医综合真题-无答案版.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/中医综合历年真题-2016年中医综合真题-无答案版.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/中医综合历年真题-2016年中医综合真题.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/中医综合历年真题-2016年中医综合真题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/临床医学综合-心血管系统-心脏骤停-无答案版.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/临床医学综合-心血管系统-心脏骤停-无答案版.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/临床医学综合-心血管系统-心脏骤停.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/临床医学综合-心血管系统-心脏骤停.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/医学心理学-心理评估-无答案版.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/医学心理学-心理评估-无答案版.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/医学心理学-心理评估.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/医学心理学-心理评估.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/口腔修复学-固定义齿-无答案版.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/口腔修复学-固定义齿.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/口腔修复学-固定义齿.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/口腔修复学-固定义齿.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mao/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mao/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mao/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mao/service/impl/QuestionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mao/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mao/Run.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mao/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mao/service/impl/QuestionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/口腔修复学-固定义齿.md" beforeDir="false" afterPath="$PROJECT_DIR$/口腔修复学-固定义齿.md" afterDir="false" />
-    </list>
+    <list default="true" id="610271fe-91c9-432f-9887-0d77da445191" name="变更" comment="java_crawling_medical_question_bank_network" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +63,7 @@
     <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mao.Run" />
       <module name="java爬取医学题库网" />
+      <option name="PROGRAM_PARAMETERS" value="-d" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="mao.*" />
@@ -160,6 +138,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.QuestionServiceTest.getQuestionList" />
+      <item itemvalue="JUnit.QuestionServiceTest.getQuestionList2" />
+      <item itemvalue="JUnit.QuestionServiceTest.getQuestionList3" />
+      <item itemvalue="JUnit.QuestionServiceTest.getQuestionTitle2" />
+      <item itemvalue="应用程序.Run" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.Run" />
@@ -181,7 +166,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675163060124</updated>
-      <workItem from="1675163061966" duration="16689000" />
+      <workItem from="1675163061966" duration="16960000" />
     </task>
     <task id="LOCAL-00001" summary="java_crawling_medical_question_bank_network">
       <created>1675164897055</created>
@@ -295,7 +280,28 @@
       <option name="project" value="LOCAL" />
       <updated>1675179066815</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="java_crawling_medical_question_bank_network">
+      <created>1675179827286</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1675179827286</updated>
+    </task>
+    <task id="LOCAL-00018" summary="java_crawling_medical_question_bank_network">
+      <created>1675179920456</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675179920456</updated>
+    </task>
+    <task id="LOCAL-00019" summary="java_crawling_medical_question_bank_network">
+      <created>1675180080469</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675180080469</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
