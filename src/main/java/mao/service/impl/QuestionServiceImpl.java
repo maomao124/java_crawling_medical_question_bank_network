@@ -754,7 +754,7 @@ public class QuestionServiceImpl implements QuestionService
         QuestionInfo questionInfo = questionTitle.getInfo();
         String subject = questionInfo.getSubject();
         String name = questionInfo.getName();
-        String fileName = subject + "-" + name + ".md";
+        String fileName = subject + "-" + name + "-无答案版.md";
         System.out.println("正在保存到md文件，文件名称：" + fileName);
 
         StringBuilder stringBuilder = new StringBuilder(1000);

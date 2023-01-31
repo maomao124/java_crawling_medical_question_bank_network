@@ -30,6 +30,7 @@ public class Run
         System.out.println("数据来源：https://www.medtiku.com/app");
         System.out.println();
         System.out.println("使用说明：\n" +
+                "添加参数-d可输出更详细的数据" +
                 "本程序需要两个数据，分别是cid和sid，怎么拿到这两个数据，步骤如下:\n" +
                 "1.用浏览器进入该网址 https://www.medtiku.com/app\n" +
                 "2.点击到做题页面 https://www.medtiku.com/app#/q/25/560/1\n" +
@@ -50,6 +51,8 @@ public class Run
         System.out.print("请输入sid：");
         sid = input.next();
 
+        long start = System.currentTimeMillis();
+
         System.out.println();
 
         System.out.println("当前cid为" + cid + ",sid为" + sid);
@@ -59,11 +62,47 @@ public class Run
 
         System.out.println("发起请求");
         QuestionTitle questionTitle = questionService.getQuestionTitle(cid, sid);
+
+        if (args.length > 0)
+        {
+            if (args[0] != null)
+            {
+                if (args[0].equals("-d"))
+                {
+                    //输入更详细的数据
+                    System.out.println("响应数据：\n" + questionTitle);
+                    System.out.println();
+                    System.out.println();
+                }
+            }
+        }
+
         System.out.println("正在解析");
         String quiz = questionTitle.getQuiz();
         List<Question> questionList = questionService.getQuestionList(quiz);
         System.out.println("解析完成，一共" + questionList.size() + "条数据");
         System.out.println();
+
+        if (args.length > 0)
+        {
+            if (args[0] != null)
+            {
+                if (args[0].equals("-d"))
+                {
+                    //输入更详细的数据
+                    System.out.println("解析数据：\n");
+                    for (Question question : questionList)
+                    {
+                        System.out.println(question);
+                        System.out.println();
+                        System.out.println();
+                    }
+                    System.out.println();
+                    System.out.println();
+                }
+            }
+        }
+
         String s = questionService.saveToTxtFile(questionTitle, questionList);
         //System.out.println(s);
         System.out.println();
@@ -71,5 +110,11 @@ public class Run
         System.out.println();
         String s2 = questionService.saveToMarkDownFile(questionTitle, questionList);
         System.out.println();
+        String s3 = questionService.saveToMarkDownFileNoAnswer(questionTitle, questionList);
+        System.out.println();
+
+        long end = System.currentTimeMillis();
+        System.out.println();
+        System.out.println("耗时：" + (end - start) + "毫秒");
     }
 }
