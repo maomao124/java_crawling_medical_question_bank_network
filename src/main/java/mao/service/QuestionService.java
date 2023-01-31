@@ -1,5 +1,8 @@
 package mao.service;
 
+import mao.entity.QuestionTitle;
+import mao.entity.R;
+
 /**
  * Project name(项目名称)：java爬取医学题库网
  * Package(包名): mao.service
@@ -15,5 +18,12 @@ package mao.service;
 
 public interface QuestionService
 {
-
+    /**
+     * 得到题目的信息
+     *
+     * @param cid cid
+     * @param sid sid
+     * @return {@link QuestionTitle}
+     */
+    QuestionTitle getQuestionTitle(String cid, String sid);
 }
