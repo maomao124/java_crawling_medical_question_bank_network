@@ -63,8 +63,10 @@ public class Run
         String quiz = questionTitle.getQuiz();
         List<Question> questionList = questionService.getQuestionList(quiz);
         System.out.println("解析完成，一共" + questionList.size() + "条数据");
-
+        System.out.println();
         String s = questionService.saveToTxtFile(questionTitle, questionList);
-        System.out.println(s);
+        //System.out.println(s);
+        System.out.println();
+        String s1 = questionService.saveToTxtFileNoAnswer(questionTitle, questionList);
     }
 }

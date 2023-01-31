@@ -46,4 +46,13 @@ public interface QuestionService
      * @return {@link String} txt文件里的内容
      */
     String saveToTxtFile(QuestionTitle questionTitle, List<Question> questionList);
+
+    /**
+     * 保存到txt文件，无答案版
+     *
+     * @param questionTitle questionTitle
+     * @param questionList  List<Question>
+     * @return {@link String} txt文件里的内容
+     */
+    String saveToTxtFileNoAnswer(QuestionTitle questionTitle, List<Question> questionList);
 }
