@@ -10,6 +10,7 @@ import mao.net.RestfulHTTP;
 import mao.service.QuestionService;
 import mao.utils.SslUtils;
 
+import java.awt.*;
 import java.util.List;
 
 /**
@@ -66,6 +67,7 @@ public class QuestionServiceImpl implements QuestionService
         //判断状态
         if (status != 1)
         {
+            Toolkit.getDefaultToolkit().beep();
             //得到错误信息
             String errMsg = r.getErrMsg();
             //抛出异常
@@ -76,10 +78,17 @@ public class QuestionServiceImpl implements QuestionService
         QuestionTitle questionTitle = r.getData();
         if (questionTitle == null)
         {
+            Toolkit.getDefaultToolkit().beep();
             //得到错误信息
             String errMsg = r.getErrMsg();
             //抛出异常
             throw new RuntimeException("读取不到数据! 状态码：" + status + "  错误信息：" + errMsg);
+        }
+        if (questionTitle.getInfo() == null)
+        {
+            Toolkit.getDefaultToolkit().beep();
+            //抛出异常
+            throw new RuntimeException("读取不到数据! 请检查是否输入了正确的cid和sid");
         }
         //返回
         return questionTitle;
