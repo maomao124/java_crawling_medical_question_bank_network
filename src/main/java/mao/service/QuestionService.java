@@ -55,4 +55,22 @@ public interface QuestionService
      * @return {@link String} txt文件里的内容
      */
     String saveToTxtFileNoAnswer(QuestionTitle questionTitle, List<Question> questionList);
+
+    /**
+     * 保存到MarkDown文件，无答案版
+     *
+     * @param questionTitle questionTitle
+     * @param questionList  List<Question>
+     * @return {@link String} txt文件里的内容
+     */
+    String saveToMarkDownFile(QuestionTitle questionTitle, List<Question> questionList);
+
+    /**
+     * 保存到MarkDown文件，无答案版
+     *
+     * @param questionTitle questionTitle
+     * @param questionList  List<Question>
+     * @return {@link String} txt文件里的内容
+     */
+    String saveToMarkDownFileNoAnswer(QuestionTitle questionTitle, List<Question> questionList);
 }

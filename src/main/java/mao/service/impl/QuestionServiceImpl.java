@@ -425,4 +425,17 @@ public class QuestionServiceImpl implements QuestionService
 
         return data;
     }
+
+
+    @Override
+    public String saveToMarkDownFile(QuestionTitle questionTitle, List<Question> questionList)
+    {
+        return null;
+    }
+
+    @Override
+    public String saveToMarkDownFileNoAnswer(QuestionTitle questionTitle, List<Question> questionList)
+    {
+        return null;
+    }
 }
