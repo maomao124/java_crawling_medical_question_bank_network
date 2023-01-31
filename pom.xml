@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--
+      -maven项目核心配置文件-
+    Project name(项目名称)：java爬取医学题库网
+    Author(作者）: mao
+    Author QQ：1296193245
+    GitHub：https://github.com/maomao124/
+    Date(创建日期)： 2023/1/31
+    Time(创建时间)： 19:04
+    -->
+    <groupId>mao</groupId>
+    <artifactId>java_crawling_medical_question_bank_network</artifactId>
+    <!--更改项，不能有中文，名称-->
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    <!--依赖包配置放入位置-->
+    <dependencies>
+
+        <!--Jsoup解析html-->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.15.3</version>
+        </dependency>
+
+        <!--阿里巴巴的FastJson json解析-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.79</version>
+        </dependency>
+
+        <!-- 测试框架 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>java爬取医学题库网</finalName>
+        <!--更改项，也可以不改，打包的jar文件名称-->
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>test</mainClass>
+                            <!--更改项，主类名-->
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <!--jar包依赖插件放入位置-->
+
+            <!--可选模块，添加console_hide模式的jar文件，配合本人开发的jar文件启动器使用。使用实时模板，或者使用下面的-->
+            <!--https://github.com/maomao124/run-jar-tool-3.0-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <id>package</id>
+                        <phase>package</phase>
+                        <configuration>
+                            <target>
+                                <echo message="*******************install-or-package*******************"/>
+                                <mkdir dir="${basedir}/target/classes"/>
+                                <!--创建文件夹-->
+                                <copy todir="${project.build.directory}/classes" overwrite="true">
+                                    <fileset dir="${project.build.directory}"
+                                             erroronmissingdir="false">
+                                        <include name="*.jar"/>
+                                    </fileset>
+                                </copy>
+
+                                <move file="${project.build.directory}/classes/java爬取医学题库网.jar"
+                                      tofile="${project.build.directory}/java爬取医学题库网_hide.jar"/>
+
+                                <copy todir="${project.build.directory}/classes" overwrite="true">
+                                    <fileset dir="${project.build.directory}"
+                                             erroronmissingdir="false">
+                                        <include name="*.jar"/>
+                                    </fileset>
+                                </copy>
+
+                                <move file="${project.build.directory}/classes/java爬取医学题库网.jar"
+                                      tofile="${project.build.directory}/java爬取医学题库网_args.jar"/>
+
+                                <move file="${project.build.directory}/classes/java爬取医学题库网_hide.jar"
+                                      tofile="${project.build.directory}/java爬取医学题库网_args_save.jar"/>
+                                <!--替换的名称-->
+
+                                <!--jar包备份-->
+                                <copy todir="H:/jar包/" overwrite="true">
+                                    <fileset dir="${project.build.directory}"
+                                             erroronmissingdir="false">
+                                        <include name="*.jar"/>
+                                    </fileset>
+                                </copy>
+
+                                <copy todir="${project.build.directory}/" overwrite="true">
+                                    <fileset dir="H:/jar包/"
+                                             erroronmissingdir="false">
+                                        <include name="*.bat"/>
+                                    </fileset>
+                                </copy>
+
+                                <copy todir="${project.build.directory}/" overwrite="true">
+                                    <fileset dir="H:/jar包/"
+                                             erroronmissingdir="false">
+                                        <include name="jar启动器.7z"/>
+                                    </fileset>
+                                </copy>
+
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>clean</id>
+                        <phase>clean</phase>
+                        <configuration>
+                            <target>
+                                <echo message="*******************clean*******************"/>
+                                <delete dir="target"/>
+                                <mkdir dir="${basedir}/target/classes"/>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+            <!--必须去除{project.build.directory}和{basedir}前面的空格-->
+            <!--
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <id>package</id>
+                        <phase>package</phase>
+                        <configuration>
+                            <target>
+                                <echo message="*******************install-or-package*******************"/>
+                                <mkdir dir="$ {basedir}/target/classes"/>
+
+                                <copy todir="$ {project.build.directory}/classes" overwrite="true">
+                                    <fileset dir="$ {project.build.directory}"
+                                             erroronmissingdir="false">
+                                        <include name="*.jar"/>
+                                    </fileset>
+                                </copy>
+
+                                <move file="$ {project.build.directory}/classes/java爬取医学题库网.jar"
+                                      tofile="$ {project.build.directory}/java爬取医学题库网_hide.jar"/>
+
+                                <copy todir="$PROJECT.BUILD.DIRECTORY$/classes" overwrite="true">
+                                    <fileset dir="$PROJECT.BUILD.DIRECTORY$"
+                                             erroronmissingdir="false">
+                                        <include name="*.jar"/>
+                                    </fileset>
+                                </copy>
+
+                                <move file="$PROJECT.BUILD.DIRECTORY$/classes/java爬取医学题库网.jar"
+                                      tofile="$PROJECT.BUILD.DIRECTORY$/java爬取医学题库网_args.jar"/>
+
+                                <move file="$PROJECT.BUILD.DIRECTORY$/classes/java爬取医学题库网_hide.jar"
+                                      tofile="$PROJECT.BUILD.DIRECTORY$/java爬取医学题库网_args_save.jar"/>
+
+                                <copy todir="H:/jar包/" overwrite="true">
+                                    <fileset dir="$ {project.build.directory}"
+                                             erroronmissingdir="false">
+                                        <include name="*.jar"/>
+                                    </fileset>
+                                </copy>
+
+                                <copy todir="$PROJECT.BUILD.DIRECTORY$/" overwrite="true">
+                                    <fileset dir="H:/jar包/"
+                                             erroronmissingdir="false">
+                                        <include name="*.bat"/>
+                                    </fileset>
+                                </copy>
+
+                                <copy todir="$PROJECT.BUILD.DIRECTORY$/" overwrite="true">
+                                    <fileset dir="H:/jar包/"
+                                             erroronmissingdir="false">
+                                        <include name="jar启动器.7z"/>
+                                    </fileset>
+                                </copy>
+
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>clean</id>
+                        <phase>clean</phase>
+                        <configuration>
+                            <target>
+                                <echo message="*******************clean*******************"/>
+                                <delete dir="target"/>
+                                <mkdir dir="$ {basedir}/target/classes"/>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            -->
+        </plugins>
+    </build>
+
+</project>
