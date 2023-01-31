@@ -68,5 +68,8 @@ public class Run
         //System.out.println(s);
         System.out.println();
         String s1 = questionService.saveToTxtFileNoAnswer(questionTitle, questionList);
+        System.out.println();
+        String s2 = questionService.saveToMarkDownFile(questionTitle, questionList);
+        System.out.println();
     }
 }
