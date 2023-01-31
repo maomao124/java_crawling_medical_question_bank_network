@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo message="*******************install-or-package*******************"/>
+  <mkdir dir="H:\程序\大四寒假\java爬取医学题库网/target/classes"/>
+  <copy todir="H:\程序\大四寒假\java爬取医学题库网\target/classes" overwrite="true">
+    <fileset dir="H:\程序\大四寒假\java爬取医学题库网\target" erroronmissingdir="false">
+      <include name="*.jar"/>
+    </fileset>
+  </copy>
+  <move file="H:\程序\大四寒假\java爬取医学题库网\target/classes/java爬取医学题库网.jar" tofile="H:\程序\大四寒假\java爬取医学题库网\target/java爬取医学题库网_hide.jar"/>
+  <copy todir="H:\程序\大四寒假\java爬取医学题库网\target/classes" overwrite="true">
+    <fileset dir="H:\程序\大四寒假\java爬取医学题库网\target" erroronmissingdir="false">
+      <include name="*.jar"/>
+    </fileset>
+  </copy>
+  <move file="H:\程序\大四寒假\java爬取医学题库网\target/classes/java爬取医学题库网.jar" tofile="H:\程序\大四寒假\java爬取医学题库网\target/java爬取医学题库网_args.jar"/>
+  <move file="H:\程序\大四寒假\java爬取医学题库网\target/classes/java爬取医学题库网_hide.jar" tofile="H:\程序\大四寒假\java爬取医学题库网\target/java爬取医学题库网_args_save.jar"/>
+  <copy todir="H:/jar包/" overwrite="true">
+    <fileset dir="H:\程序\大四寒假\java爬取医学题库网\target" erroronmissingdir="false">
+      <include name="*.jar"/>
+    </fileset>
+  </copy>
+  <copy todir="H:\程序\大四寒假\java爬取医学题库网\target/" overwrite="true">
+    <fileset dir="H:/jar包/" erroronmissingdir="false">
+      <include name="*.bat"/>
+    </fileset>
+  </copy>
+  <copy todir="H:\程序\大四寒假\java爬取医学题库网\target/" overwrite="true">
+    <fileset dir="H:/jar包/" erroronmissingdir="false">
+      <include name="jar启动器.7z"/>
+    </fileset>
+  </copy>
+</target>
+</project>
