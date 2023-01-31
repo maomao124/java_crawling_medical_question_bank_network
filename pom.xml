@@ -52,19 +52,32 @@
         <finalName>java爬取医学题库网</finalName>
         <!--更改项，也可以不改，打包的jar文件名称-->
         <plugins>
+
+            <!--jar包依赖插件放入位置-->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
+                <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>test</mainClass>
-                            <!--更改项，主类名-->
+                            <!-- 此处指定main方法入口的class -->
+                            <mainClass>mao.Run</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>assembly</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
-            <!--jar包依赖插件放入位置-->
 
             <!--可选模块，添加console_hide模式的jar文件，配合本人开发的jar文件启动器使用。使用实时模板，或者使用下面的-->
             <!--https://github.com/maomao124/run-jar-tool-3.0-->
