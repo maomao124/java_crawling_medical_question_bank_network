@@ -258,8 +258,8 @@ public class QuestionServiceImpl implements QuestionService
                     stringBuilder.append(question.getE()).append("\n");
                 }
                 //正确答案
-                stringBuilder.append("正确答案：")
-                        .append(question.getAnswer()).append("\n");
+                //stringBuilder.append("正确答案：")
+                       // .append(question.getAnswer()).append("\n");
                 //解析
                 if (question.getNote() != null && !question.getNote().equals(""))
                 {
@@ -272,7 +272,8 @@ public class QuestionServiceImpl implements QuestionService
         String data = stringBuilder.toString();
 
         System.out.println("正在写入到文件 " + fileName);
-        FileUtils.write("./" + fileName, data);
+        boolean b = FileUtils.write("./" + fileName, data);
+        System.out.println("写入是否成功：" + b);
 
         return data;
     }
