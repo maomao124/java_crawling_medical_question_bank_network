@@ -3,11 +3,13 @@ package mao.service.impl;
 import com.alibaba.fastjson.JSON;
 import mao.constant.UrlConstant;
 import mao.entity.Question;
+import mao.entity.QuestionInfo;
 import mao.entity.QuestionTitle;
 import mao.entity.R;
 import mao.handler.Base64;
 import mao.net.RestfulHTTP;
 import mao.service.QuestionService;
+import mao.utils.FileUtils;
 import mao.utils.SslUtils;
 
 import java.awt.*;
@@ -109,5 +111,169 @@ public class QuestionServiceImpl implements QuestionService
         }
         //json转对象
         return JSON.parseArray(json, Question.class);
+    }
+
+    @Override
+    public String saveToTxtFile(QuestionTitle questionTitle, List<Question> questionList)
+    {
+        QuestionInfo questionInfo = questionTitle.getInfo();
+        String subject = questionInfo.getSubject();
+        String name = questionInfo.getName();
+        String fileName = subject + "-" + name + ".txt";
+        System.out.println("正在保存到txt文件，文件名称：" + fileName);
+
+        StringBuilder stringBuilder = new StringBuilder(1000);
+        stringBuilder.append(subject).append("-").append(name)
+                .append("\n\n\n");
+
+        for (int i = 0; i < questionList.size(); i++)
+        {
+            Question question = questionList.get(i);
+            //判断题型
+            if (question.getQtype() == 1)
+            {
+                //单选题
+                stringBuilder.append("第").append(i + 1).append("题")
+                        .append("\n")
+                        .append("题目类型：单选题")
+                        .append("\n")
+                        .append("问题：")
+                        .append(question.getTitle())
+                        .append("\n");
+                //选项a
+                if (question.getA() != null && !question.getA().equals(""))
+                {
+                    stringBuilder.append(question.getA()).append("\n");
+                }
+                //选项b
+                if (question.getB() != null && !question.getB().equals(""))
+                {
+                    stringBuilder.append(question.getB()).append("\n");
+                }
+                //选项c
+                if (question.getC() != null && !question.getC().equals(""))
+                {
+                    stringBuilder.append(question.getC()).append("\n");
+                }
+                //选项d
+                if (question.getD() != null && !question.getD().equals(""))
+                {
+                    stringBuilder.append(question.getD()).append("\n");
+                }
+                //选项e
+                if (question.getE() != null && !question.getE().equals(""))
+                {
+                    stringBuilder.append(question.getE()).append("\n");
+                }
+
+                //正确答案
+                stringBuilder.append("正确答案：")
+                        .append(question.getAnswer()).append("\n");
+                //解析
+                if (question.getNote() != null && !question.getNote().equals(""))
+                {
+                    stringBuilder.append("解析：").append(question.getNote()).append("\n");
+                }
+            }
+
+            if (question.getQtype() == 2)
+            {
+                //单选题
+                stringBuilder.append("第").append(i + 1).append("题")
+                        .append("\n")
+                        .append("题目类型：多选题")
+                        .append("\n")
+                        .append("问题：")
+                        .append(question.getTitle())
+                        .append("\n");
+                //选项a
+                if (question.getA() != null && !question.getA().equals(""))
+                {
+                    stringBuilder.append(question.getA()).append("\n");
+                }
+                //选项b
+                if (question.getB() != null && !question.getB().equals(""))
+                {
+                    stringBuilder.append(question.getB()).append("\n");
+                }
+                //选项c
+                if (question.getC() != null && !question.getC().equals(""))
+                {
+                    stringBuilder.append(question.getC()).append("\n");
+                }
+                //选项d
+                if (question.getD() != null && !question.getD().equals(""))
+                {
+                    stringBuilder.append(question.getD()).append("\n");
+                }
+                //选项e
+                if (question.getE() != null && !question.getE().equals(""))
+                {
+                    stringBuilder.append(question.getE()).append("\n");
+                }
+
+                //正确答案
+                stringBuilder.append("正确答案：")
+                        .append(question.getAnswer()).append("\n");
+                //解析
+                if (question.getNote() != null && !question.getNote().equals(""))
+                {
+                    stringBuilder.append("解析：").append(question.getNote()).append("\n");
+                }
+            }
+
+            if (question.getQtype() == 3 || question.getQtype() == 4)
+            {
+                //单选题
+                stringBuilder.append("第").append(i + 1).append("题")
+                        .append("\n")
+                        .append("题目类型：记忆题")
+                        .append("\n")
+                        .append("问题：")
+                        .append(question.getTitle())
+                        .append("\n");
+                //选项a
+                if (question.getA() != null && !question.getA().equals(""))
+                {
+                    stringBuilder.append(question.getA()).append("\n");
+                }
+                //选项b
+                if (question.getB() != null && !question.getB().equals(""))
+                {
+                    stringBuilder.append(question.getB()).append("\n");
+                }
+                //选项c
+                if (question.getC() != null && !question.getC().equals(""))
+                {
+                    stringBuilder.append(question.getC()).append("\n");
+                }
+                //选项d
+                if (question.getD() != null && !question.getD().equals(""))
+                {
+                    stringBuilder.append(question.getD()).append("\n");
+                }
+                //选项e
+                if (question.getE() != null && !question.getE().equals(""))
+                {
+                    stringBuilder.append(question.getE()).append("\n");
+                }
+                //正确答案
+                stringBuilder.append("正确答案：")
+                        .append(question.getAnswer()).append("\n");
+                //解析
+                if (question.getNote() != null && !question.getNote().equals(""))
+                {
+                    stringBuilder.append("解析：").append(question.getNote().trim()).append("\n");
+                }
+            }
+            stringBuilder.append("\n\n\n");
+        }
+
+        String data = stringBuilder.toString();
+
+        System.out.println("正在写入到文件 " + fileName);
+        FileUtils.write("./" + fileName, data);
+
+        return data;
     }
 }

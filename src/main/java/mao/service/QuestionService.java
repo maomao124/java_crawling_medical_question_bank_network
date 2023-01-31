@@ -37,4 +37,13 @@ public interface QuestionService
      * @return {@link List}<{@link Question}>
      */
     List<Question> getQuestionList(String quiz);
+
+    /**
+     * 保存到txt文件
+     *
+     * @param questionTitle questionTitle
+     * @param questionList  List<Question>
+     * @return {@link String} txt文件里的内容
+     */
+    String saveToTxtFile(QuestionTitle questionTitle, List<Question> questionList);
 }

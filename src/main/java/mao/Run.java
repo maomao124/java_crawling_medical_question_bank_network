@@ -64,5 +64,7 @@ public class Run
         List<Question> questionList = questionService.getQuestionList(quiz);
         System.out.println("解析完成，一共" + questionList.size() + "条数据");
 
+        String s = questionService.saveToTxtFile(questionTitle, questionList);
+        System.out.println(s);
     }
 }
