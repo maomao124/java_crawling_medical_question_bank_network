@@ -493,7 +493,7 @@ public class QuestionServiceImpl implements QuestionService
             {
                 stringBuilder.append("#### ")
                         .append(i)
-                        .append(".")
+                        .append(". ")
                         .append(question.getTitle())
                         .append("\n\n");
 
@@ -564,7 +564,7 @@ public class QuestionServiceImpl implements QuestionService
             {
                 stringBuilder.append("#### ")
                         .append(i)
-                        .append(".")
+                        .append(". ")
                         .append(question.getTitle())
                         .append("\n\n");
 
@@ -634,7 +634,7 @@ public class QuestionServiceImpl implements QuestionService
             {
                 stringBuilder.append("#### ")
                         .append(i)
-                        .append(".")
+                        .append(". ")
                         .append(question.getTitle())
                         .append("\n\n");
 
@@ -784,7 +784,7 @@ public class QuestionServiceImpl implements QuestionService
             {
                 stringBuilder.append("#### ")
                         .append(i)
-                        .append(".")
+                        .append(". ")
                         .append(question.getTitle())
                         .append("\n\n");
 
@@ -856,7 +856,7 @@ public class QuestionServiceImpl implements QuestionService
             {
                 stringBuilder.append("#### ")
                         .append(i)
-                        .append(".")
+                        .append(". ")
                         .append(question.getTitle())
                         .append("\n\n");
 
@@ -926,7 +926,7 @@ public class QuestionServiceImpl implements QuestionService
             {
                 stringBuilder.append("#### ")
                         .append(i)
-                        .append(".")
+                        .append(". ")
                         .append(question.getTitle())
                         .append("\n\n");
 
