@@ -1,11 +1,16 @@
 package mao.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import mao.constant.UrlConstant;
+import mao.entity.Question;
 import mao.entity.QuestionTitle;
 import mao.entity.R;
+import mao.handler.Base64;
 import mao.net.RestfulHTTP;
 import mao.service.QuestionService;
 import mao.utils.SslUtils;
+
+import java.util.List;
 
 /**
  * Project name(项目名称)：java爬取医学题库网
@@ -78,5 +83,22 @@ public class QuestionServiceImpl implements QuestionService
         }
         //返回
         return questionTitle;
+    }
+
+    @Override
+    public List<Question> getQuestionList(String quiz)
+    {
+        //解码
+        String json;
+        try
+        {
+            json = Base64.decode(quiz);
+        }
+        catch (Exception e)
+        {
+            throw new RuntimeException("解码失败！，可能是后端服务器换加密方式了，或者读取不到数据。以下是异常信息：\n" + e.getMessage());
+        }
+        //json转对象
+        return JSON.parseArray(json, Question.class);
     }
 }

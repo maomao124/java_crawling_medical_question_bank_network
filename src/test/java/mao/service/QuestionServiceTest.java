@@ -1,8 +1,12 @@
 package mao.service;
 
 import mao.applicatiom.MainApplication;
+import mao.entity.Question;
 import mao.entity.QuestionTitle;
+import mao.handler.Base64;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -41,5 +45,53 @@ class QuestionServiceTest
     {
         QuestionTitle questionTitle = MainApplication.getQuestionService().getQuestionTitle("432", "18");
         System.out.println(questionTitle);
+    }
+
+
+    @Test
+    void getQuestionList()
+    {
+        QuestionTitle questionTitle = MainApplication.getQuestionService().getQuestionTitle("432", "18");
+        String quiz = questionTitle.getQuiz();
+        List<Question> questionList = MainApplication.getQuestionService().getQuestionList(quiz);
+        for (Question question : questionList)
+        {
+            System.out.println(question);
+            System.out.println();
+        }
+    }
+
+    @Test
+    void getQuestionList2()
+    {
+        QuestionTitle questionTitle = MainApplication.getQuestionService().getQuestionTitle("437", "18");
+        String quiz = questionTitle.getQuiz();
+        String json = Base64.decode(quiz);
+        System.out.println(json);
+        List<Question> questionList = MainApplication.getQuestionService().getQuestionList(quiz);
+        for (Question question : questionList)
+        {
+            System.out.println(question);
+            System.out.println();
+        }
+
+        System.out.println("总数："+questionList.size());
+    }
+
+    @Test
+    void getQuestionList3()
+    {
+        QuestionTitle questionTitle = MainApplication.getQuestionService().getQuestionTitle("2002", "132");
+        String quiz = questionTitle.getQuiz();
+        String json = Base64.decode(quiz);
+        System.out.println(json);
+        List<Question> questionList = MainApplication.getQuestionService().getQuestionList(quiz);
+        for (Question question : questionList)
+        {
+            System.out.println(question);
+            System.out.println();
+        }
+
+        System.out.println("总数："+questionList.size());
     }
 }

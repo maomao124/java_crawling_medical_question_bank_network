@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="610271fe-91c9-432f-9887-0d77da445191" name="变更" comment="java_crawling_medical_question_bank_network">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mao/applicatiom/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mao/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mao/service/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mao/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mao/service/impl/QuestionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mao/service/QuestionServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mao/service/QuestionServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mao/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mao/service/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mao/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mao/service/impl/QuestionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mao/service/QuestionServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mao/service/QuestionServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +67,8 @@
       <recent name="mao.net" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.QuestionServiceTest.getQuestionTitle3">
-    <configuration name="QuestionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.QuestionServiceTest.getQuestionList3">
+    <configuration name="QuestionServiceTest.getQuestionList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java爬取医学题库网" />
       <extension name="coverage">
         <pattern>
@@ -73,12 +78,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="mao.service" />
       <option name="MAIN_CLASS_NAME" value="mao.service.QuestionServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="getQuestionList" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionServiceTest.getQuestionTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuestionServiceTest.getQuestionList2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java爬取医学题库网" />
       <extension name="coverage">
         <pattern>
@@ -88,7 +94,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="mao.service" />
       <option name="MAIN_CLASS_NAME" value="mao.service.QuestionServiceTest" />
-      <option name="METHOD_NAME" value="getQuestionTitle" />
+      <option name="METHOD_NAME" value="getQuestionList2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestionServiceTest.getQuestionList3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java爬取医学题库网" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mao.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mao.service" />
+      <option name="MAIN_CLASS_NAME" value="mao.service.QuestionServiceTest" />
+      <option name="METHOD_NAME" value="getQuestionList3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,29 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestfulHTTPTest.requestArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java爬取医学题库网" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mao.net.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mao.net" />
-      <option name="MAIN_CLASS_NAME" value="mao.net.RestfulHTTPTest" />
-      <option name="METHOD_NAME" value="requestArray" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuestionServiceTest.getQuestionList3" />
+        <item itemvalue="JUnit.QuestionServiceTest.getQuestionList2" />
+        <item itemvalue="JUnit.QuestionServiceTest.getQuestionList" />
         <item itemvalue="JUnit.QuestionServiceTest.getQuestionTitle3" />
         <item itemvalue="JUnit.QuestionServiceTest.getQuestionTitle2" />
-        <item itemvalue="JUnit.QuestionServiceTest" />
-        <item itemvalue="JUnit.QuestionServiceTest.getQuestionTitle" />
-        <item itemvalue="JUnit.RestfulHTTPTest.requestArray" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +169,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675163060124</updated>
-      <workItem from="1675163061966" duration="5759000" />
+      <workItem from="1675163061966" duration="7017000" />
     </task>
     <task id="LOCAL-00001" summary="java_crawling_medical_question_bank_network">
       <created>1675164897055</created>
@@ -207,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675168410443</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="java_crawling_medical_question_bank_network">
+      <created>1675169047190</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675169047190</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

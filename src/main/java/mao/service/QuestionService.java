@@ -1,7 +1,10 @@
 package mao.service;
 
+import mao.entity.Question;
 import mao.entity.QuestionTitle;
 import mao.entity.R;
+
+import java.util.List;
 
 /**
  * Project name(项目名称)：java爬取医学题库网
@@ -26,4 +29,12 @@ public interface QuestionService
      * @return {@link QuestionTitle}
      */
     QuestionTitle getQuestionTitle(String cid, String sid);
+
+    /**
+     * 得到题目列表
+     *
+     * @param quiz QuestionTitle的quiz字段，是一串base64码
+     * @return {@link List}<{@link Question}>
+     */
+    List<Question> getQuestionList(String quiz);
 }
