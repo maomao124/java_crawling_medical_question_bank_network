@@ -1,10 +1,7 @@
 package mao;
 
 import mao.applicatiom.MainApplication;
-import mao.entity.Question;
-import mao.entity.QuestionChapter;
-import mao.entity.QuestionSubject;
-import mao.entity.QuestionTitle;
+import mao.entity.*;
 import mao.service.QuestionService;
 
 import java.io.IOException;
@@ -100,6 +97,13 @@ public class Run
             System.out.println();
             System.out.println();
             System.out.println("下载完成");
+            System.out.println();
+            System.out.println("正在生成索引文件");
+            QuestionSubjectMetaData questionSubjectMetaData = questionService.getQuestionSubjectMetaData(questionSubject.getSubject());
+            String s = questionService.createIndexMarkDownFile(questionSubjectMetaData, questionSubject);
+            System.out.println();
+            System.out.println("完成");
+
             long end = System.currentTimeMillis();
             System.out.println("总耗时：" + (end - start) + "毫秒");
         }

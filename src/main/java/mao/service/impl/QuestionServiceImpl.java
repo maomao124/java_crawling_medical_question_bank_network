@@ -1115,11 +1115,13 @@ public class QuestionServiceImpl implements QuestionService
         stringBuilder.append("# ")
                 .append(questionSubjectMetaData.getS_title())
                 .append("-索引")
+                .append("\n")
                 .append("<br>\n<br>\n<br>\n<br>\n");
 
         stringBuilder.append("| 序号 | 名称 |     链接     |")
                 .append("\n")
-                .append("| :--: | :--: | :----------: |");
+                .append("| :--: | :--: | :----------: |")
+                .append("\n");
 
         int index = 1;
 
