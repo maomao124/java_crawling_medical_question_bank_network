@@ -1,0 +1,584 @@
+医学免疫学-抗原
+
+
+第1题
+题目类型：单选题
+问题：下列哪种物质没有免疫原性
+A.异嗜性抗原
+B.抗体
+C.补体
+D.半抗原
+E.细菌多糖
+
+
+
+第2题
+题目类型：单选题
+问题：交叉反应是由于二种不同的抗原分子中具有
+A.构象决定簇
+B.不同的抗原决定簇
+C.功能性决定簇
+D.共同抗原决定簇
+E.连续性决定簇
+
+
+
+第3题
+题目类型：单选题
+问题：有的抗原称为TI-Ag，这是因为
+A．抗原来源于非胸腺组织
+B．它诱生的抗体是在骨髓中产生的
+C．它诱生的抗体属于IgG类抗体
+D．抗原往往具有复杂和不相同的抗原决定簇
+E．它能直接刺激B细胞产生抗体，无需T细胞辅助
+
+
+
+第4题
+题目类型：单选题
+问题：存在于不同种属之间的共同抗原称为
+A.异种抗原
+B.交叉抗原
+C.超抗原
+D.异嗜性抗原
+E.类属抗原
+
+
+
+第5题
+题目类型：单选题
+问题：动物来源的破伤风抗毒素对人而言是
+A.半抗原
+B.抗体
+C.抗原
+D.既是抗原又是抗体
+E.超抗原
+
+
+
+第6题
+题目类型：单选题
+问题：仅有反应原性而无免疫原性的物质是
+A.超抗原
+B.半抗原
+C.完全抗原
+D.异嗜性抗原
+E.类属抗原
+
+
+
+第7题
+题目类型：单选题
+问题：免疫原性最强的物质是
+A.蛋白质
+B.脂质
+C.多糖
+D.核酸
+E.脂多糖
+
+
+
+第8题
+题目类型：单选题
+问题：许多抗原称为胸腺依赖性抗原，是因为
+A.在胸腺中产生的
+B.相应抗体是在胸腺中产生
+C.对此抗原不产生体液性免疫
+D.仅在于T细胞上
+E.只有在T细胞辅助下才能产生针对这种抗原的抗体
+
+
+
+第9题
+题目类型：单选题
+问题：属于自身抗原的是
+A．ABO血型抗原
+B．肺炎球菌荚膜多糖
+C．类脂
+D．眼晶体蛋白
+E．破伤风类毒素
+
+
+
+第10题
+题目类型：单选题
+问题：属于同种异型抗原的是
+A．ABO血型抗原
+B．肺炎球菌荚膜多糖
+C．类脂
+D．眼晶体蛋白
+E．破伤风类毒素
+
+
+
+第11题
+题目类型：单选题
+问题：属于异嗜性抗原的是
+A．Rh抗原与人的RBC
+B．AFP与乙肝病毒
+C．马血清与破伤风杆菌
+D．大肠杆菌O14型的多糖抗原与人结肠粘膜
+E．类毒素
+
+
+
+第12题
+题目类型：单选题
+问题：抗原的特异性取决于
+A.抗原的大小
+B.抗原的物理性状
+C.抗原结构的复杂性
+D.抗原的种类
+E.抗原表面的特殊化学基团
+
+
+
+第13题
+题目类型：单选题
+问题：半抗原
+A.是大分子物质
+B.通常是蛋白质
+C.只有免疫原性
+D.只有反应原性
+E.只有与载体结合后才能和相应抗体结合
+
+
+
+第14题
+题目类型：单选题
+问题：下列关于抗原的说法，哪一种是错误的
+A．大分子蛋白质抗原常含有多种不同的抗原决定簇
+B．抗原诱导免疫应答必须有T细胞辅助
+C．不同的抗原之间可以有相同的抗原决定簇
+D．抗原不一定只诱导正免疫应答
+E．半抗原虽无免疫原性，但可与相应抗体结合
+
+
+
+第15题
+题目类型：单选题
+问题：超抗原
+A．可以多克隆激活某些T细胞或B细胞
+B．须经抗原呈递细胞加工处理
+C．与自身免疫病无关
+D．有严格的MHC限制性
+E．只能活化一个相应的T细胞克隆
+
+
+
+第16题
+题目类型：单选题
+问题：下列哪种物质不是TD-Ag
+A.血清蛋白
+B.细菌外毒素
+C.类毒素
+D.IgM
+E.细菌脂多糖
+
+
+
+第17题
+题目类型：多选题
+问题：TD抗原
+A．通常是蛋白
+B．引起强的IgG应答
+C．能产生记忆和二次应答
+D．引起抗体产生需T细胞的参与
+E．既有T细胞决定簇又有B细胞决定簇
+
+
+
+第18题
+题目类型：多选题
+问题：属于同种异型抗原的是
+A．ABO系统
+B．HLA
+C．Rh系统
+D．补体系统
+E．AFP
+
+
+
+第19题
+题目类型：多选题
+问题：属于异嗜性抗原的是
+A．青霉素
+B．HLA
+C．Fossman抗原
+D．溶血性链球菌细胞壁多糖抗原与人的心肌
+E．大肠杆菌O14型多糖抗原与人的结肠粘膜
+
+
+
+第20题
+题目类型：多选题
+问题：佐剂的生物学作用
+A．增强抗原的免疫原性
+B．改变产生抗体的类型
+C．诱导免疫耐受
+D．增强巨噬细胞的吞噬作用
+E．增加抗体效价
+
+
+
+第21题
+题目类型：多选题
+问题：抗原的免疫原性与何相关
+A．抗原的分子大小
+B．抗原的异己性程度
+C．抗原的化学组成
+D．抗原的分子构象
+E．抗原的进入机体的途径
+
+
+
+第22题
+题目类型：多选题
+问题：属于TD-Ag的物质是
+A．细菌脂多糖
+B．破伤风抗毒素
+C．牛丙种球蛋白
+D．聚合鞭毛素
+E．抗狂犬病毒血清
+
+
+
+第23题
+题目类型：多选题
+问题：以下关于抗原免疫原性的描述，正确的是
+A．抗原与机体的亲缘关系越远，免疫原性越强
+B．抗原对机体免疫系统来说必须是异物
+C．自身成分不具有免疫原性
+D．是异物的物质一定是抗原
+E．只有化学结构与宿主自身成分不同的物质才具有免疫原性
+
+
+
+第24题
+题目类型：多选题
+问题：T细胞表位和B细胞表位的特点分别是
+A．T细胞表位只位于抗原分子表面
+B．B细胞识别的表位往往是天然的
+C．T细胞表位有构象表位和线性表位两种类型
+D．B细胞表位有构象表位和线性表位两种类型
+E．T细胞表位需MHC分子的递呈
+
+
+
+第25题
+题目类型：多选题
+问题：关于TD-Ag和TI-Ag的特点错误的是
+A．TI-2抗原仅含有B细胞丝裂原
+B．TD-Ag由T细胞表位和B细胞表位组成
+C．TI-1抗原含有B细胞丝裂原和重复B细胞表位
+D．TD抗原仅能刺激细胞免疫
+E．绝大多数的蛋白质抗原是TI抗原
+
+
+
+第26题
+题目类型：多选题
+问题：TI-Ag
+A．在胸腺中加工处理的抗原
+B．可直接激活B细胞产生抗体
+C．易于诱导细胞免疫应答
+D．不能诱导产生再次应答
+E．能被T细胞抗原受体直接识别
+
+
+
+第27题
+题目类型：记忆题
+问题：抗原决定簇（表位）
+解析：存在于抗原分子中决定抗原特异性的特殊化学基团。
+
+
+
+第28题
+题目类型：记忆题
+问题：TD-Ag
+解析：胸腺依赖性抗原，刺激B细胞产生抗体过程中需T细胞的协助，既有T细胞决定簇又有B细胞决定簇，绝大多数蛋白质抗原属于此。
+
+
+
+第29题
+题目类型：记忆题
+问题：异嗜性抗原（Forssman抗原）
+解析：在与不同种系生物间的共同抗原。
+
+
+
+第30题
+题目类型：记忆题
+问题：TI-Ag
+解析：胸腺非依赖性抗原，刺激B细胞产生抗体时不需要T细胞的协助，而且产生的抗体主要是IgM，不引起细胞免疫应答，也无免疫记忆。
+
+
+
+第31题
+题目类型：记忆题
+问题：交叉反应
+解析：抗体与具有相同或相似表位的抗原之间出现的反应。
+
+
+
+第32题
+题目类型：记忆题
+问题：佐剂
+解析：一种非特异性免疫增强剂，预先或同抗原一起注射到机体，能增强机体对该抗原的免疫应答或改变免疫应答的类型。
+
+
+
+第33题
+题目类型：记忆题
+问题：超抗原
+解析：一类可直接结合抗原受体，激活大量（2%—20%）T细胞或B细胞克隆，并诱导强烈免疫应答的物质，主要包括细菌和病毒的成分及其产物等。
+
+
+
+第34题
+题目类型：记忆题
+问题：抗原
+解析：能刺激机体免疫系统启动特异性免疫应答，并能与相应的免疫应答产物在体内或体外发生特异性结合的物质。
+
+
+
+第35题
+题目类型：记忆题
+问题：半抗原
+解析：能与相应的抗体结合而具有免疫反应性，但不能诱导免疫应答，即无免疫原性。
+
+
+
+第36题
+题目类型：记忆题
+问题：类毒素
+解析：外毒素经0.3%—0.4%甲醛处理后，失去毒性而保留免疫原性。
+
+
+
+第37题
+题目类型：记忆题
+问题：简述T细胞表位和B细胞表位主要特点。
+解析：<table border="0" cellspacing="0" cellpadding="0">
+	<tbody>
+		<tr>
+			<td width="81" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">T</span><span style="font-size:9pt;font-family:宋体;">细胞决定簇<span> </span></span>
+				</p>
+			</td>
+			<td width="201" colspan="2" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">B</span><span style="font-size:9pt;font-family:宋体;">细胞决定簇<span> </span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="81" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">受体<span> </span></span>
+				</p>
+			</td>
+			<td width="95" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">TCR </span>
+				</p>
+			</td>
+			<td width="106" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">BCR </span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="81" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">MHC</span><span style="font-size:9pt;font-family:宋体;">递呈<span> </span></span>
+				</p>
+			</td>
+			<td width="95" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">必需<span> </span></span>
+				</p>
+			</td>
+			<td width="106" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">不需<span> </span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="81" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">决定簇构型<span> </span></span>
+				</p>
+			</td>
+			<td width="95" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">顺序决定簇<span> </span></span>
+				</p>
+			</td>
+			<td width="106" valign="top" style="border:solid black 1.0pt;">
+				<p>
+					<span style="font-size:9pt;font-family:宋体;">构象决定簇，顺序决定簇<span> </span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="81" valign="top" style="border:solid black 1.0pt;">
+				<p>
+					<span style="font-size:9pt;font-family:宋体;">决定簇位置<span> </span></span>
+				</p>
+			</td>
+			<td width="95" valign="top" style="border:solid black 1.0pt;">
+				<p>
+					<span style="font-size:9pt;font-family:宋体;">抗原分子任意部位<span> </span></span>
+				</p>
+			</td>
+			<td width="106" valign="top" style="border:solid black 1.0pt;">
+				<p>
+					<span style="font-size:9pt;font-family:宋体;">多存在于抗原分子表面<span> </span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="81" valign="top" style="border:solid black 1.0pt;">
+				<p>
+					<span style="font-size:9pt;font-family:宋体;">决定簇性质<span> </span></span>
+				</p>
+			</td>
+			<td width="95" valign="top" style="border:solid black 1.0pt;">
+				<p>
+					<span style="font-size:9pt;font-family:宋体;">多为加工变性后的短肽<span> </span></span>
+				</p>
+			</td>
+			<td width="106" valign="top" style="border:solid black 1.0pt;">
+				<p>
+					<span style="font-size:9pt;font-family:宋体;">天然多肽、多糖、脂多糖等<span> </span></span>
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+第38题
+题目类型：记忆题
+问题：TD-Ag与TI-Ag引起的免疫应答有何特点
+解析：<table border="0" cellspacing="0" cellpadding="0">
+	<tbody>
+		<tr>
+			<td width="82" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">TD-Ag </span>
+				</p>
+			</td>
+			<td width="205" colspan="2" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">TI-Ag </span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="82" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">组成<span> </span></span>
+				</p>
+			</td>
+			<td width="97" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">B</span><span style="font-size:9pt;font-family:宋体;">和<span>T</span>细胞表位<span> </span></span>
+				</p>
+			</td>
+			<td width="108" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">重复<span>B</span>细胞表位<span> </span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="82" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">T</span><span style="font-size:9pt;font-family:宋体;">细胞辅助<span> </span></span>
+				</p>
+			</td>
+			<td width="97" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">必需<span> </span></span>
+				</p>
+			</td>
+			<td width="108" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">无需<span> </span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="82" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">免疫应答<span> </span></span>
+				</p>
+			</td>
+			<td width="97" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">体液和细胞免疫<span> </span></span>
+				</p>
+			</td>
+			<td width="108" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">体液免疫<span> </span></span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="82" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">抗体类型<span> </span></span>
+				</p>
+			</td>
+			<td width="97" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">多种<span> </span></span>
+				</p>
+			</td>
+			<td width="108" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">IgM </span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="82" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">免疫记忆<span> </span></span>
+				</p>
+			</td>
+			<td width="97" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">有<span> </span></span>
+				</p>
+			</td>
+			<td width="108" valign="top" style="border:solid black 1.0pt;">
+				<p align="center" style="text-align:center;">
+					<span style="font-size:9pt;font-family:宋体;">无<span> </span></span>
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+第39题
+题目类型：记忆题
+问题：超抗原和常规抗原有何区别。
+解析：超抗原与常规抗原的区别在于： 
+1) 常规抗原仅能激活极少数具有抗原特异性受体的T细胞或B细胞克隆；超抗原只需极低浓度即可激活多个克隆的T细胞或B细胞。 
+2) 常规抗原与TCR超变区的抗原结合槽结合。超抗原的一端能与TCRVβ的外侧结合，另一端与MHC-Ⅱ类分子结合 
+3) T细胞识别常规抗原是特异性的；识别超抗原是非特异性的。 
+4) T细胞识别常规抗原受MHC限制；识别超抗原不受MHC限制。
+
+
+

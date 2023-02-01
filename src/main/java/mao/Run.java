@@ -2,6 +2,8 @@ package mao;
 
 import mao.applicatiom.MainApplication;
 import mao.entity.Question;
+import mao.entity.QuestionChapter;
+import mao.entity.QuestionSubject;
 import mao.entity.QuestionTitle;
 import mao.service.QuestionService;
 
@@ -37,7 +39,9 @@ public class Run
                 "2.点击到做题页面 https://www.medtiku.com/app#/q/25/560/1\n" +
                 "3.观察浏览器地址栏\n" +
                 "4.例如 https://www.medtiku.com/app#/q/25/560/1，cid为560，sid为25\n" +
-                "      https://www.medtiku.com/app#/q/129/1976/1，cid为1976，sid为129\n");
+                "      https://www.medtiku.com/app#/q/129/1976/1，cid为1976，sid为129\n" +
+                "如果输入cid的值为-1，那么将会把该二级列表下的所有题目都下载\n" +
+                "软件有md和txt两种格式，如果想要转成docx、pdf、html、img等格式，请使用Typora软件导出，md文件可以使用Typora查看\n");
 
 
         System.out.println();
@@ -52,6 +56,62 @@ public class Run
         System.out.print("请输入sid：");
         sid = input.next();
 
+        QuestionService questionService = MainApplication.getQuestionService();
+
+        if (cid.equals("-1"))
+        {
+            long start = System.currentTimeMillis();
+
+            System.out.println();
+            System.out.println("即将下载该二级列表下的所有题目");
+            System.out.println("正在请求列表");
+            QuestionSubject questionSubject = questionService.getQuestionSubject(sid);
+            System.out.println("请求列表完成，该二级列表下一共有" + questionSubject.getChapter().size() + "项");
+            System.out.println("二级列表元数据：" + questionSubject.getSubject());
+            List<QuestionChapter> questionChapterList = questionSubject.getChapter();
+            System.out.println("章节列表：");
+            System.out.println("------------------------------------------------");
+            System.out.println("| " + "序号" + "  |   " + "cid" + "   |   " + "章节名称");
+            System.out.println("------------------------------------------------");
+            for (int i = 0; i < questionChapterList.size(); i++)
+            {
+                QuestionChapter questionChapter = questionChapterList.get(i);
+                System.out.println("|  " + (i + 1) + "   |   " + questionChapter.getC_id() + "   |   " + questionChapter.getC_name());
+            }
+            System.out.println("------------------------------------------------");
+
+
+            System.out.println("开始下载");
+
+
+            for (int i = 0; i < questionChapterList.size(); i++)
+            {
+                QuestionChapter questionChapter = questionChapterList.get(i);
+                System.out.println("下载进度：" + (i + 1) + "/" + questionChapterList.size());
+
+                download(args, input, questionChapter.getC_id().toString(), sid);
+                System.out.println();
+            }
+
+            System.out.println();
+            System.out.println();
+            System.out.println("下载完成");
+            long end = System.currentTimeMillis();
+            System.out.println("总耗时：" + (end - start) + "毫秒");
+        }
+        else
+        {
+            download(args, input, cid, sid);
+        }
+
+        System.out.println();
+        System.out.println("按回车键退出程序");
+        input.nextLine();
+        input.nextLine();
+    }
+
+    private static void download(String[] args, Scanner input, String cid, String sid)
+    {
         long start = System.currentTimeMillis();
 
         System.out.println();
@@ -118,10 +178,6 @@ public class Run
         System.out.println();
         System.out.println("耗时：" + (end - start) + "毫秒");
 
-
         System.out.println();
-        System.out.println("按回车键退出程序");
-        input.next();
-
     }
 }
