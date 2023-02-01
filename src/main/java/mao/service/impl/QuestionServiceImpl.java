@@ -81,7 +81,7 @@ public class QuestionServiceImpl implements QuestionService
         }
         //正常
         //读取数据
-        QuestionTitle questionTitle =  r.getData(QuestionTitle.class);
+        QuestionTitle questionTitle = r.getData(QuestionTitle.class);
         if (questionTitle == null)
         {
             Toolkit.getDefaultToolkit().beep();
@@ -1065,10 +1065,36 @@ public class QuestionServiceImpl implements QuestionService
         //url
         String url = UrlConstant.questionApiSubjectUrl + "?id=" + sid;
         //访问
-        String json = restfulHTTP.GET(url);
-        System.out.println(json);
-        Object parse = JSON.parse(json);
-        System.out.println(parse);
-        return null;
+        R r = restfulHTTP.GET(R.class, url, null, null);
+        //状态
+        Integer status = r.getStatus();
+        //判断状态
+        if (status != 1)
+        {
+            Toolkit.getDefaultToolkit().beep();
+            //得到错误信息
+            String errMsg = r.getErrMsg();
+            //抛出异常
+            throw new RuntimeException("服务器错误! 状态码：" + status + "  错误信息：" + errMsg);
+        }
+        //正常
+        //读取数据
+        QuestionSubject questionSubject = r.getData(QuestionSubject.class);
+        if (questionSubject == null)
+        {
+            Toolkit.getDefaultToolkit().beep();
+            //得到错误信息
+            String errMsg = r.getErrMsg();
+            //抛出异常
+            throw new RuntimeException("读取不到数据! 状态码：" + status + "  错误信息：" + errMsg);
+        }
+        if (questionSubject.getSubject() == null)
+        {
+            Toolkit.getDefaultToolkit().beep();
+            //抛出异常
+            throw new RuntimeException("读取不到数据! 请检查是否输入了正确的sid");
+        }
+
+        return questionSubject;
     }
 }

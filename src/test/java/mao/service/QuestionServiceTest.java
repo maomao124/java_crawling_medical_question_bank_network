@@ -106,4 +106,10 @@ class QuestionServiceTest
     {
         System.out.println(MainApplication.getQuestionService().getQuestionSubject("132"));
     }
+
+    @Test
+    void getQuestionSubject2()
+    {
+        System.out.println(MainApplication.getQuestionService().getQuestionSubject("123"));
+    }
 }

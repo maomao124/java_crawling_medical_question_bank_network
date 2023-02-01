@@ -77,7 +77,7 @@
       <recent name="mao.net" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Run">
+  <component name="RunManager" selected="JUnit.QuestionServiceTest.getQuestionSubject2">
     <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mao.Run" />
       <module name="java爬取医学题库网" />
@@ -107,22 +107,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionServiceTest.getQuestionList3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java爬取医学题库网" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mao.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mao.service" />
-      <option name="MAIN_CLASS_NAME" value="mao.service.QuestionServiceTest" />
-      <option name="METHOD_NAME" value="getQuestionList3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="QuestionServiceTest.getQuestionSubject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java爬取医学题库网" />
       <extension name="coverage">
@@ -134,6 +118,22 @@
       <option name="PACKAGE_NAME" value="mao.service" />
       <option name="MAIN_CLASS_NAME" value="mao.service.QuestionServiceTest" />
       <option name="METHOD_NAME" value="getQuestionSubject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestionServiceTest.getQuestionSubject2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java爬取医学题库网" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mao.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mao.service" />
+      <option name="MAIN_CLASS_NAME" value="mao.service.QuestionServiceTest" />
+      <option name="METHOD_NAME" value="getQuestionSubject2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,19 +156,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.QuestionServiceTest.getQuestionList3" />
       <item itemvalue="JUnit.QuestionServiceTest.getQuestionTitle2" />
       <item itemvalue="JUnit.QuestionServiceTest.getMainHtml" />
       <item itemvalue="JUnit.QuestionServiceTest.getQuestionSubject" />
       <item itemvalue="应用程序.Run" />
+      <item itemvalue="JUnit.QuestionServiceTest.getQuestionSubject2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Run" />
+        <item itemvalue="JUnit.QuestionServiceTest.getQuestionSubject2" />
         <item itemvalue="JUnit.QuestionServiceTest.getQuestionSubject" />
+        <item itemvalue="应用程序.Run" />
         <item itemvalue="JUnit.QuestionServiceTest.getMainHtml" />
         <item itemvalue="JUnit.QuestionServiceTest.getQuestionTitle2" />
-        <item itemvalue="JUnit.QuestionServiceTest.getQuestionList3" />
       </list>
     </recent_temporary>
   </component>
