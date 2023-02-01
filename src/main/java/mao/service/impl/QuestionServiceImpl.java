@@ -1,6 +1,10 @@
 package mao.service.impl;
 
 import com.alibaba.fastjson.JSON;
+import com.gargoylesoftware.htmlunit.BrowserVersion;
+import com.gargoylesoftware.htmlunit.NicelyResynchronizingAjaxController;
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import mao.constant.UrlConstant;
 import mao.entity.Question;
 import mao.entity.QuestionInfo;
@@ -1012,5 +1016,48 @@ public class QuestionServiceImpl implements QuestionService
 
         return data;
 
+    }
+
+
+    @Override
+    public String getMainHtml()
+    {
+        // 新建一个模拟谷歌Chrome浏览器的浏览器客户端对象
+        final WebClient webClient = new WebClient(BrowserVersion.CHROME);
+        // 当JS执行出错的时候是否抛出异常, 这里选择不需要
+        //接受任何主机连接 无论是否有有效证书
+        webClient.getOptions().setUseInsecureSSL(true);
+        webClient.getOptions().setThrowExceptionOnScriptError(false);
+        // 当HTTP的状态非200时是否抛出异常, 这里选择不需要
+        webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
+        webClient.getOptions().setActiveXNative(false);
+        //设置连接超时时间
+        webClient.getOptions().setTimeout(60000);
+        webClient.setJavaScriptTimeout(5000);
+        webClient.getOptions().setDoNotTrackEnabled(false);
+        // 是否启用CSS
+        webClient.getOptions().setCssEnabled(true);
+        // 启用JS
+        webClient.getOptions().setJavaScriptEnabled(true);
+        // 很重要，设置支持AJAX
+        webClient.setAjaxController(new NicelyResynchronizingAjaxController());
+
+        HtmlPage page;
+        try
+        {
+            page = webClient.getPage(UrlConstant.baseAppUrl);
+            Thread.sleep(3000);
+            System.out.println(page.asXml());
+            return page.asXml();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            webClient.close();
+        }
+        return null;
     }
 }

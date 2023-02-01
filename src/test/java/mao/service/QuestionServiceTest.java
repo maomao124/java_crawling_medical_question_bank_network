@@ -75,7 +75,7 @@ class QuestionServiceTest
             System.out.println();
         }
 
-        System.out.println("总数："+questionList.size());
+        System.out.println("总数：" + questionList.size());
     }
 
     @Test
@@ -92,6 +92,12 @@ class QuestionServiceTest
             System.out.println();
         }
 
-        System.out.println("总数："+questionList.size());
+        System.out.println("总数：" + questionList.size());
+    }
+
+    @Test
+    void getMainHtml()
+    {
+        MainApplication.getQuestionService().getMainHtml();
     }
 }

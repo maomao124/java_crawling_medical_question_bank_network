@@ -17,6 +17,8 @@ public class UrlConstant
 {
     public static final String baseUrl = "https://www.medtiku.com/";
 
+    public static final String baseAppUrl = "https://www.medtiku.com/app";
+
     public static final String baseApiUrl = "https://www.medtiku.com/api/";
 
     public static final String questionApiUrl = "https://www.medtiku.com/api/q";

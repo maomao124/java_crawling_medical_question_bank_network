@@ -73,4 +73,11 @@ public interface QuestionService
      * @return {@link String} txt文件里的内容
      */
     String saveToMarkDownFileNoAnswer(QuestionTitle questionTitle, List<Question> questionList);
+
+    /**
+     * 得到js渲染后的html主页面
+     *
+     * @return {@link String}
+     */
+    String getMainHtml();
 }
