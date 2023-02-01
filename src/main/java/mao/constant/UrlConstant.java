@@ -22,4 +22,7 @@ public class UrlConstant
     public static final String baseApiUrl = "https://www.medtiku.com/api/";
 
     public static final String questionApiUrl = "https://www.medtiku.com/api/q";
+
+    public static final String questionApiSubjectUrl = "https://www.medtiku.com/api/subject";
+
 }

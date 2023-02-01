@@ -1,5 +1,7 @@
 package mao.entity;
 
+import com.alibaba.fastjson.JSON;
+
 /**
  * Project name(项目名称)：java爬取医学题库网
  * Package(包名): mao.entity
@@ -20,7 +22,7 @@ public class R
     /**
      * 数据
      */
-    private QuestionTitle data;
+    private String data;
 
     /**
      * 状态
@@ -46,7 +48,7 @@ public class R
      * @param status 状态
      * @param errMsg 犯错消息
      */
-    public R(QuestionTitle data, Integer status, String errMsg)
+    public R(String data, Integer status, String errMsg)
     {
         this.data = data;
         this.status = status;
@@ -56,9 +58,19 @@ public class R
     /**
      * 得到数据
      *
-     * @return {@link QuestionTitle}
+     * @return {@link String}
      */
-    public QuestionTitle getData()
+    public <T> T getData(Class<T> clazz)
+    {
+        return JSON.parseObject(data, clazz);
+    }
+
+    /**
+     * 得到数据
+     *
+     * @return {@link String}
+     */
+    public String getData()
     {
         return data;
     }
@@ -68,7 +80,7 @@ public class R
      *
      * @param data 数据
      */
-    public void setData(QuestionTitle data)
+    public void setData(String data)
     {
         this.data = data;
     }
@@ -113,12 +125,7 @@ public class R
         this.errMsg = errMsg;
     }
 
-    /**
-     * =
-     *
-     * @param o o
-     * @return boolean
-     */
+
     @Override
     public boolean equals(Object o)
     {
@@ -144,11 +151,6 @@ public class R
         return getErrMsg() != null ? getErrMsg().equals(r.getErrMsg()) : r.getErrMsg() == null;
     }
 
-    /**
-     * 散列码
-     *
-     * @return int
-     */
     @Override
     public int hashCode()
     {
@@ -158,11 +160,6 @@ public class R
         return result;
     }
 
-    /**
-     * 字符串
-     *
-     * @return {@link String}
-     */
     @Override
     @SuppressWarnings("all")
     public String toString()

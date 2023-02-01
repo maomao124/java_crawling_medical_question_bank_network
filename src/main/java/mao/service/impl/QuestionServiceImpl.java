@@ -6,10 +6,7 @@ import com.gargoylesoftware.htmlunit.NicelyResynchronizingAjaxController;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import mao.constant.UrlConstant;
-import mao.entity.Question;
-import mao.entity.QuestionInfo;
-import mao.entity.QuestionTitle;
-import mao.entity.R;
+import mao.entity.*;
 import mao.handler.Base64;
 import mao.net.RestfulHTTP;
 import mao.service.QuestionService;
@@ -84,7 +81,7 @@ public class QuestionServiceImpl implements QuestionService
         }
         //正常
         //读取数据
-        QuestionTitle questionTitle = r.getData();
+        QuestionTitle questionTitle =  r.getData(QuestionTitle.class);
         if (questionTitle == null)
         {
             Toolkit.getDefaultToolkit().beep();
@@ -1058,6 +1055,20 @@ public class QuestionServiceImpl implements QuestionService
         {
             webClient.close();
         }
+        return null;
+    }
+
+
+    @Override
+    public QuestionSubject getQuestionSubject(String sid)
+    {
+        //url
+        String url = UrlConstant.questionApiSubjectUrl + "?id=" + sid;
+        //访问
+        String json = restfulHTTP.GET(url);
+        System.out.println(json);
+        Object parse = JSON.parse(json);
+        System.out.println(parse);
         return null;
     }
 }

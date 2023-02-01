@@ -1,5 +1,7 @@
 package mao.entity;
 
+import java.io.Serializable;
+
 /**
  * Project name(项目名称)：java爬取医学题库网
  * Package(包名): mao.entity

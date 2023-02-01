@@ -98,6 +98,12 @@ class QuestionServiceTest
     @Test
     void getMainHtml()
     {
-        MainApplication.getQuestionService().getMainHtml();
+        System.out.println(MainApplication.getQuestionService().getMainHtml());
+    }
+
+    @Test
+    void getQuestionSubject()
+    {
+        System.out.println(MainApplication.getQuestionService().getQuestionSubject("132"));
     }
 }

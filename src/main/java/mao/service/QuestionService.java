@@ -1,6 +1,7 @@
 package mao.service;
 
 import mao.entity.Question;
+import mao.entity.QuestionSubject;
 import mao.entity.QuestionTitle;
 import mao.entity.R;
 
@@ -80,4 +81,13 @@ public interface QuestionService
      * @return {@link String}
      */
     String getMainHtml();
+
+
+    /**
+     * 得到主题信息，包括此主题下的所有章节信息
+     *
+     * @param sid sid
+     * @return {@link QuestionSubject}
+     */
+    QuestionSubject getQuestionSubject(String sid);
 }
