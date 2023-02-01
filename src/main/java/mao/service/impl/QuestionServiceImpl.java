@@ -1101,6 +1101,7 @@ public class QuestionServiceImpl implements QuestionService
     @Override
     public QuestionSubjectMetaData getQuestionSubjectMetaData(String subject)
     {
-        return null;
+        List<QuestionSubjectMetaData> questionSubjectMetaDataList = JSON.parseArray(subject, QuestionSubjectMetaData.class);
+        return questionSubjectMetaDataList.get(0);
     }
 }

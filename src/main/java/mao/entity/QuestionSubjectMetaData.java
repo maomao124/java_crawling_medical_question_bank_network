@@ -10,7 +10,7 @@ package mao.entity;
  * Date(创建日期)： 2023/2/1
  * Time(创建时间)： 14:52
  * Version(版本): 1.0
- * Description(描述)： 无
+ * Description(描述)： 列表元数据
  * [{"s_id":39,"s_title":"方剂学"}]
  */
 

@@ -112,4 +112,11 @@ class QuestionServiceTest
     {
         System.out.println(MainApplication.getQuestionService().getQuestionSubject("123"));
     }
+
+
+    @Test
+    void getQuestionSubjectMetaData()
+    {
+        System.out.println(MainApplication.getQuestionService().getQuestionSubjectMetaData("[{\"s_id\":39,\"s_title\":\"方剂学\"}]"));
+    }
 }

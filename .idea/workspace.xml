@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="610271fe-91c9-432f-9887-0d77da445191" name="变更" comment="java_crawling_medical_question_bank_network">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mao/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mao/Run.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mao/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mao/service/impl/QuestionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/java爬取医学题库网.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/java爬取医学题库网.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java爬取医学题库网_args.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/java爬取医学题库网_args.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
       <recent name="mao.net" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Run">
+  <component name="RunManager" selected="JUnit.QuestionServiceTest.getQuestionSubjectMetaData">
     <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mao.Run" />
       <module name="java爬取医学题库网" />
@@ -127,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionServiceTest.getQuestionTitle2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuestionServiceTest.getQuestionSubjectMetaData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java爬取医学题库网" />
       <extension name="coverage">
         <pattern>
@@ -137,26 +135,26 @@
       </extension>
       <option name="PACKAGE_NAME" value="mao.service" />
       <option name="MAIN_CLASS_NAME" value="mao.service.QuestionServiceTest" />
-      <option name="METHOD_NAME" value="getQuestionTitle2" />
+      <option name="METHOD_NAME" value="getQuestionSubjectMetaData" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.QuestionServiceTest.getQuestionTitle2" />
       <item itemvalue="JUnit.QuestionServiceTest.getMainHtml" />
       <item itemvalue="JUnit.QuestionServiceTest.getQuestionSubject" />
       <item itemvalue="应用程序.Run" />
       <item itemvalue="JUnit.QuestionServiceTest.getQuestionSubject2" />
+      <item itemvalue="JUnit.QuestionServiceTest.getQuestionSubjectMetaData" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuestionServiceTest.getQuestionSubjectMetaData" />
         <item itemvalue="应用程序.Run" />
         <item itemvalue="JUnit.QuestionServiceTest.getQuestionSubject2" />
         <item itemvalue="JUnit.QuestionServiceTest.getQuestionSubject" />
         <item itemvalue="JUnit.QuestionServiceTest.getMainHtml" />
-        <item itemvalue="JUnit.QuestionServiceTest.getQuestionTitle2" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +171,7 @@
       <updated>1675163060124</updated>
       <workItem from="1675163061966" duration="18278000" />
       <workItem from="1675222985581" duration="7319000" />
-      <workItem from="1675230386183" duration="3767000" />
+      <workItem from="1675230386183" duration="4246000" />
     </task>
     <task id="LOCAL-00001" summary="java_crawling_medical_question_bank_network">
       <created>1675164897055</created>
@@ -371,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675233709824</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="java_crawling_medical_question_bank_network">
+      <created>1675234612358</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1675234612358</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
