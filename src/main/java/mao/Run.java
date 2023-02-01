@@ -60,8 +60,6 @@ public class Run
 
         if (cid.equals("-1"))
         {
-            long start = System.currentTimeMillis();
-
             System.out.println();
             System.out.println("即将下载该二级列表下的所有题目");
             System.out.println("正在请求列表");
@@ -80,6 +78,12 @@ public class Run
             }
             System.out.println("------------------------------------------------");
 
+            System.out.println();
+            System.out.println("按回车键继续");
+            input.nextLine();
+            input.nextLine();
+
+            long start = System.currentTimeMillis();
 
             System.out.println("开始下载");
 
