@@ -95,4 +95,13 @@ public interface QuestionService
      * @return {@link QuestionSubjectMetaData}
      */
     QuestionSubjectMetaData getQuestionSubjectMetaData(String subject);
+
+    /**
+     * 创建MarkDown格式的索引文件
+     *
+     * @param questionSubjectMetaData QuestionSubjectMetaData
+     * @param questionSubject         QuestionSubject
+     * @return {@link String}
+     */
+    String createIndexMarkDownFile(QuestionSubjectMetaData questionSubjectMetaData, QuestionSubject questionSubject);
 }

@@ -1104,4 +1104,69 @@ public class QuestionServiceImpl implements QuestionService
         List<QuestionSubjectMetaData> questionSubjectMetaDataList = JSON.parseArray(subject, QuestionSubjectMetaData.class);
         return questionSubjectMetaDataList.get(0);
     }
+
+    @Override
+    public String createIndexMarkDownFile(QuestionSubjectMetaData questionSubjectMetaData, QuestionSubject questionSubject)
+    {
+        String indexFileName = "./" + questionSubjectMetaData.getS_title() + "-索引.md";
+
+        StringBuilder stringBuilder = new StringBuilder(100);
+
+        stringBuilder.append("# ")
+                .append(questionSubjectMetaData.getS_title())
+                .append("-索引")
+                .append("<br>\n<br>\n<br>\n<br>\n");
+
+        stringBuilder.append("| 序号 | 名称 |     链接     |")
+                .append("\n")
+                .append("| :--: | :--: | :----------: |");
+
+        int index = 1;
+
+        for (int i = 0; i < questionSubject.getChapter().size(); i++)
+        {
+            QuestionChapter questionChapter = questionSubject.getChapter().get(i);
+            String fileName1 = questionSubjectMetaData.getS_title() + "-" + questionChapter.getC_name() + ".md";
+            String fileName2 = questionSubjectMetaData.getS_title() + "-" + questionChapter.getC_name() + "-无答案版.md";
+            stringBuilder.append("| ")
+                    .append(index)
+                    .append(" |")
+                    .append(" ")
+                    .append(questionSubjectMetaData.getS_title())
+                    .append("-")
+                    .append(questionChapter.getC_name())
+                    .append(" | ")
+                    .append("[点击进入](")
+                    .append("./")
+                    .append(fileName1)
+                    .append(")")
+                    .append(" |")
+                    .append("\n");
+            index++;
+
+            stringBuilder.append("| ")
+                    .append(index)
+                    .append(" |")
+                    .append(" ")
+                    .append(questionSubjectMetaData.getS_title())
+                    .append("-")
+                    .append(questionChapter.getC_name())
+                    .append("-无答案版")
+                    .append(" | ")
+                    .append("[点击进入](")
+                    .append("./")
+                    .append(fileName2)
+                    .append(")")
+                    .append(" |")
+                    .append("\n");
+            index++;
+        }
+
+        String data = stringBuilder.toString();
+
+        System.out.println("正在写入到文件 " + indexFileName);
+        boolean write = FileUtils.write(indexFileName, data);
+        System.out.println("写入是否成功：" + write);
+        return data;
+    }
 }
