@@ -5,6 +5,7 @@ import mao.entity.Question;
 import mao.entity.QuestionTitle;
 import mao.service.QuestionService;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -116,5 +117,11 @@ public class Run
         long end = System.currentTimeMillis();
         System.out.println();
         System.out.println("耗时：" + (end - start) + "毫秒");
+
+
+        System.out.println();
+        System.out.println("按回车键退出程序");
+        input.next();
+
     }
 }

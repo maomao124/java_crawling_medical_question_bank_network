@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="610271fe-91c9-432f-9887-0d77da445191" name="变更" comment="java_crawling_medical_question_bank_network">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mao/entity/QuestionChapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mao/entity/QuestionSubject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mao/constant/UrlConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mao/constant/UrlConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mao/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mao/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mao/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mao/service/impl/QuestionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mao/service/QuestionServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mao/service/QuestionServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mao/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mao/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mao/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mao/Run.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mao/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mao/service/impl/QuestionServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +22,8 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,7 +67,7 @@
       <recent name="mao.net" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.QuestionServiceTest.getMainHtml">
+  <component name="RunManager" selected="应用程序.Run">
     <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mao.Run" />
       <module name="java爬取医学题库网" />
@@ -156,8 +155,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.QuestionServiceTest.getMainHtml" />
         <item itemvalue="应用程序.Run" />
+        <item itemvalue="JUnit.QuestionServiceTest.getMainHtml" />
         <item itemvalue="JUnit.QuestionServiceTest.getQuestionTitle2" />
         <item itemvalue="JUnit.QuestionServiceTest.getQuestionList3" />
         <item itemvalue="JUnit.QuestionServiceTest.getQuestionList2" />
@@ -176,7 +175,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675163060124</updated>
       <workItem from="1675163061966" duration="18278000" />
-      <workItem from="1675222985581" duration="2602000" />
+      <workItem from="1675222985581" duration="3738000" />
     </task>
     <task id="LOCAL-00001" summary="java_crawling_medical_question_bank_network">
       <created>1675164897055</created>
@@ -332,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675180687400</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="java_crawling_medical_question_bank_network">
+      <created>1675225934799</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1675225934799</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
