@@ -1097,4 +1097,10 @@ public class QuestionServiceImpl implements QuestionService
 
         return questionSubject;
     }
+
+    @Override
+    public QuestionSubjectMetaData getQuestionSubjectMetaData(String subject)
+    {
+        return null;
+    }
 }

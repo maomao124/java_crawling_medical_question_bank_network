@@ -1,9 +1,6 @@
 package mao.service;
 
-import mao.entity.Question;
-import mao.entity.QuestionSubject;
-import mao.entity.QuestionTitle;
-import mao.entity.R;
+import mao.entity.*;
 
 import java.util.List;
 
@@ -90,4 +87,12 @@ public interface QuestionService
      * @return {@link QuestionSubject}
      */
     QuestionSubject getQuestionSubject(String sid);
+
+    /**
+     * 得到列表元数据
+     *
+     * @param subject 主题，QuestionInfo对象里的subject字段
+     * @return {@link QuestionSubjectMetaData}
+     */
+    QuestionSubjectMetaData getQuestionSubjectMetaData(String subject);
 }

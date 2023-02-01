@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="610271fe-91c9-432f-9887-0d77da445191" name="变更" comment="java_crawling_medical_question_bank_network">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mao/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mao/Run.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mao/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mao/Run.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/中医综合历年真题-2016年中医综合真题-无答案版.md" beforeDir="false" afterPath="$PROJECT_DIR$/中医综合历年真题-2016年中医综合真题-无答案版.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/中医综合历年真题-2016年中医综合真题.md" beforeDir="false" afterPath="$PROJECT_DIR$/中医综合历年真题-2016年中医综合真题.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java爬取医学题库网.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/java爬取医学题库网.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java爬取医学题库网_args.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/java爬取医学题库网_args.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +173,7 @@
       <updated>1675163060124</updated>
       <workItem from="1675163061966" duration="18278000" />
       <workItem from="1675222985581" duration="7319000" />
-      <workItem from="1675230386183" duration="3107000" />
+      <workItem from="1675230386183" duration="3767000" />
     </task>
     <task id="LOCAL-00001" summary="java_crawling_medical_question_bank_network">
       <created>1675164897055</created>
@@ -365,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675233172604</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="java_crawling_medical_question_bank_network">
+      <created>1675233709824</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1675233709824</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
