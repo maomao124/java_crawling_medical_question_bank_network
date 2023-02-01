@@ -8,6 +8,7 @@ H:\程序\大四寒假\java爬取医学题库网\src\main\java\mao\entity\Questi
 H:\程序\大四寒假\java爬取医学题库网\src\main\java\mao\entity\Question.java
 H:\程序\大四寒假\java爬取医学题库网\src\main\java\mao\handler\Base64.java
 H:\程序\大四寒假\java爬取医学题库网\src\main\java\mao\utils\SslUtils.java
+H:\程序\大四寒假\java爬取医学题库网\src\main\java\mao\entity\QuestionSubjectMetaData.java
 H:\程序\大四寒假\java爬取医学题库网\src\main\java\mao\constant\UrlConstant.java
 H:\程序\大四寒假\java爬取医学题库网\src\main\java\mao\utils\FileUtils.java
 H:\程序\大四寒假\java爬取医学题库网\src\main\java\mao\entity\QuestionChapter.java
